@@ -16,9 +16,9 @@
 
                     <div class="${properties.kcInputWrapperClass!}">
                         <#if usernameEditDisabled??>
-                            <input id="username" class="form-control ${properties.kcInputClass!}" name="username" value="${(login.username!'')?html}" type="text" disabled />
+                            <input id="username" class="form-control ${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
                         <#else>
-                            <input id="username" class="form-control ${properties.kcInputClass!}" name="username" value="${(login.username!'')?html}" type="text" autofocus autocomplete="off" />
+                            <input id="username" class="form-control ${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off" />
                         </#if>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                                 <input class="btn btn-primary btn-flat btn-block ${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}"/>
                             </div>
                             <div class="clearfix"></div>
-                        </div> 
+                        </div>
                     </div>
                     <#if (realm.password && realm.registrationAllowed && !usernameEditDisabled??) || realm.resetPasswordAllowed>
                         <div>

@@ -15,7 +15,7 @@
                     <label for="username" class="${properties.kcLabelClass!}">${msg("username")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="username" class="form-control ${properties.kcInputClass!}" name="username" value="${(register.formData.username!'')?html}" />
+                    <input type="text" id="username" class="form-control ${properties.kcInputClass!}" name="username" value="${(register.formData.username!'')}" />
                 </div>
             </div>
           </#if>
@@ -24,7 +24,7 @@
                     <label for="firstName" class="${properties.kcLabelClass!}">${msg("firstName")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="firstName" class="form-control ${properties.kcInputClass!}" name="firstName" value="${(register.formData.firstName!'')?html}" />
+                    <input type="text" id="firstName" class="form-control ${properties.kcInputClass!}" name="firstName" value="${(register.formData.firstName!'')}" />
                 </div>
             </div>
 
@@ -33,7 +33,7 @@
                     <label for="lastName" class="${properties.kcLabelClass!}">${msg("lastName")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="lastName" class="form-control ${properties.kcInputClass!}" name="lastName" value="${(register.formData.lastName!'')?html}" />
+                    <input type="text" id="lastName" class="form-control ${properties.kcInputClass!}" name="lastName" value="${(register.formData.lastName!'')}" />
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
                     <label for="email" class="${properties.kcLabelClass!}">${msg("email")}</label>
                 </div>
                 <div class="${properties.kcInputWrapperClass!}">
-                    <input type="text" id="email" class="form-control ${properties.kcInputClass!}" name="email" value="${(register.formData.email!'')?html}" />
+                    <input type="text" id="email" class="form-control ${properties.kcInputClass!}" name="email" value="${(register.formData.email!'')}" />
                 </div>
             </div>
 
