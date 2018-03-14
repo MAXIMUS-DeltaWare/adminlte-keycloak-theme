@@ -3,7 +3,7 @@
     <#if section = "title">
         ${msg("registerWithTitle",(realm.displayName!''))}
     <#elseif section = "header">
-        ${msg("registerWithTitleHtml",(realm.displayNameHtml!''))}
+        ${msg("registerWithTitleHtml",(realm.displayNameHtml!''))?no_esc}
     <#elseif section = "form">
         <form id="kc-register-form" class="register form ${properties.kcFormClass!}" action="${url.registrationAction}" method="post">
           <input type="text" readonly value="this is not a login form" style="display: none;">
