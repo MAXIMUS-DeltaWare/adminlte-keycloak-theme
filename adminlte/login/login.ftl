@@ -80,10 +80,15 @@
         </#if>
     <#elseif section = "info" >
         <#if realm.password && social.providers??>
+           <h4> Federated Login: </h4>
             <div id="kc-social-providers">
-                <ul>
+                <ul style="padding: 0 0 0 0px; list-style-type:none">
                     <#list social.providers as p>
-                        <li><a href="${p.loginUrl}" id="zocial-${p.alias}" class="zocial ${p.providerId}"> <span class="text">${p.displayName}</span></a></li>
+                        <li style="padding-top: 5px;"> 
+                            <a id="social-${p.alias}" href="${p.loginUrl}" class="btn btn-block btn-social btn-dropbox btn-${p.providerId}">
+                               <i class="fa fa-lock fa-${p.providerId}"></i> Sign in with ${p.displayName}
+                            </a>
+                       </li>
                     </#list>
                 </ul>
             </div>
